@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.testten.mine.view.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#e71004"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="8dp">
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_action_back" />
+        <TextView
+            android:layout_toRightOf="@id/login_back"
+            android:text="用户登录"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_user"
+        android:hint="请输入手机号"
+        android:textSize="15sp"
+        android:drawableLeft="@mipmap/ic_edit_username"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:textSize="15sp"
+        android:hint="请输入密码"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/ic_edit_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="登录"
+        android:id="@+id/login_btn"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="#e71004"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/login_tv_Sign_up"
+            android:layout_margin="10dp"
+            android:text="注册账号"
+            android:layout_alignParentLeft="true"
+            android:textColor="#f94e01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/login_tv_retrieve_password"
+            android:text="找回密码"
+            android:textColor="#f94e01"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
